@@ -16,3 +16,12 @@ output "cluster_version" {
 output "github_action_user_arn" {
   value = aws_iam_user.github_action_user.arn
 }
+
+output "github_action_access_key_id" {
+  value = aws_iam_access_key.github_action_user.id
+}
+
+output "github_action_secret_access_key" {
+  value     = aws_iam_access_key.github_action_user.secret
+  sensitive = true
+}

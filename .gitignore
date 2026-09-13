@@ -1,7 +1,8 @@
-node_modules
-.pytest_cache
-.terraform
-.terraform.tfstate.lock.info
-*.tfstate.backup
-credentials
-.pytest_cache
+﻿# Terraform state and local Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Temporary EKS authentication files
+aws-auth-backup.yaml
+aws-auth-patch.yaml
