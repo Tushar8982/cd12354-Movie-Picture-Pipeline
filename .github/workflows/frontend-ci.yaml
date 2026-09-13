@@ -98,7 +98,7 @@ jobs:
       - name: Build frontend Docker image
         working-directory: starter/frontend
         env:
-          REACT_APP_MOVIE_API_URL: http://localhost:5000
+          REACT_APP_MOVIE_API_URL: http://ae36e130190754011aa0c8b6148d3989-278548800.us-east-1.elb.amazonaws.com
         run: |
           docker build \
             --build-arg REACT_APP_MOVIE_API_URL=${REACT_APP_MOVIE_API_URL} \
